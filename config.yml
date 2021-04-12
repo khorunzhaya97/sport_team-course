@@ -1,0 +1,16 @@
+title: sport_team
+description: ggg
+template:
+  repo: sport_team-template
+  name: sport_team
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
